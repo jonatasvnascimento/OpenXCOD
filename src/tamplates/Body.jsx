@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default props => 
-    <div>
-        <h1>Body</h1>
-    </div>
-
+export default function Body() {
+    return (
+        <div>
+            <h1>Body</h1>
+        </div>
+    )
+}
