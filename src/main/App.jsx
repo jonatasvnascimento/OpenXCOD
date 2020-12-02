@@ -1,9 +1,14 @@
-function App() {
-  return (
-    <div>
-      <h1>Ola</h1>
-    </div>
-  );
-}
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'font-awesome/css/font-awesome.min.css'
 
-export default App;
+import React from 'react'
+import Header from '../tamplates/Header'
+import Footer from '../tamplates/Footer'
+import Body from '../tamplates/Body'
+
+export default props =>
+  <div>
+    <Header/>
+    <Body/>
+    <Footer/>
+  </div>
