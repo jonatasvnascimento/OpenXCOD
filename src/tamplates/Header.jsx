@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default props => 
+export default props =>
     <div>
-        <h1>Header</h1>
+        <h1>Body</h1>
     </div>

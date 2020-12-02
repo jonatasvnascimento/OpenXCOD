@@ -8,7 +8,7 @@ import Body from '../tamplates/Body'
 
 export default props =>
   <div>
-    <Header/>
-    <Body/>
-    <Footer/>
+    <Header />
+    <Body />
+    <Footer />
   </div>
