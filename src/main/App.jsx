@@ -3,11 +3,15 @@ import 'font-awesome/css/font-awesome.min.css'
 
 import React from 'react'
 import Header from '../tamplates/Header'
-// import Footer from '../tamplates/Footer'
-// import Body from '../tamplates/Body'
+import Footer from '../tamplates/Footer'
+import Body from '../tamplates/Body'
 
-export default function app(){
+export default function App() {
   return (
-    <Header/>
+    <div>
+      <Header />
+      <Footer />
+      <Body />
+    </div>
   )
 }
