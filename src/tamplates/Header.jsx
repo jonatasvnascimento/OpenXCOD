@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Header() {
+
+export default function Header(props) {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            {/* Refatorar todas as tag <Link to="/"> */}
-            <Link to="/" className="navbar-brand">Navbar</Link>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <Link to="/" className="navbar-brand">OpenXCOD</Link>
 
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -17,34 +17,34 @@ export default function Header() {
                         <Link to="/" className="nav-link">Home <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/conversor-de-moeda" className="nav-link">Moeda</Link>
-                    </li>
-
-                    <li className="nav-item dropdown">
-                        <Link to="/" className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Conversor
-                            </Link>
-                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <Link to="/" className="dropdown-item">Action</Link>
-                            <Link to="/" className="dropdown-item">Another action</Link>
-                            <div className="dropdown-divider"></div>
-                            <Link to="/" className="dropdown-item">Something else here</Link>
-                        </div>
+                        <Link to="/noticias" className="nav-link">Noticias</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" className="nav-link disabled">Disabled</Link>
+                        <Link to="/conversor" className="nav-link">Conversor</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/calculadora" className="nav-link">Calculadora</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/criacao-de-sites" className="nav-link">Criação de Sites</Link>
                     </li>
                 </ul>
+
             </div>
 
+            <nav class="navbar navbar-dark bg-dark">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+            </nav>
             <form className="form-inline my-2 my-lg-0">
-                <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+                <button className="btn btn-secondary my-2 my-sm-0" type="submit">Login</button>
             </form>
 
         </nav>
 
-        
+
     )
 }
 

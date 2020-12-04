@@ -2,18 +2,19 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'font-awesome/css/font-awesome.min.css'
 import 'jquery'
 import React from 'react'
-import {BrowserRouter} from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 
-import Router from './Routes'
+import Routes from './Routes'
 import Header from '../tamplates/Header'
-// import Footer from '../tamplates/Footer'
+import Home from '../tamplates/Home'
+
+
 
 export default function App() {
   return (
     <BrowserRouter>
         <Header />
-        {/* <Footer /> */}
-        <Router />
+        <Routes />
     </BrowserRouter>
   )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Body() {
+export default function Conversor() {
     return (
         <div>
-            <h1>Conversor de Moeda</h1>
+            <h1>Conversor</h1>
         </div>
     )
 }
