@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 import Routes from './Routes'
 import Header from '../tamplates/Header'
-
+import Footer from '../tamplates/Footer'
 
 
 export default function App() {
@@ -13,6 +13,7 @@ export default function App() {
     <BrowserRouter>
         <Header />
         <Routes />
+        <Footer/>
     </BrowserRouter>
   )
 }
