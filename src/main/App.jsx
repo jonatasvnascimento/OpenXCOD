@@ -1,17 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'font-awesome/css/font-awesome.min.css'
-
 import React from 'react'
-import Header from '../tamplates/Header'
-import Footer from '../tamplates/Footer'
-import Body from '../tamplates/Body'
+import Router from './Routes'
+
+// import Header from '../tamplates/Header'
+// import Footer from '../tamplates/Footer'
+// import Body from '../tamplates/Body'
 
 export default function App() {
   return (
-    <div>
-      <Header />
-      <Footer />
-      <Body />
-    </div>
+      <div>
+        <Router/>
+      </div>
   )
 }
