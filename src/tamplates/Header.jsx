@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Header(props) {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
+            <div className="container">
                 <Link to="/" className="navbar-brand">OpenXCOD</Link>
 
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,15 +30,8 @@ export default function Header(props) {
                             <Link to="/criacao-de-sites" className="nav-link">Criação de Sites</Link>
                         </li>
                     </ul>
-
                 </div>
 
-                <nav class="navbar navbar-light bg-light">
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-info" type="submit">Search</button>
-                    </form>
-                </nav>
                 <form className="form-inline my-2 my-lg-0">
                     <button className="btn btn-secondary my-2 my-sm-0" type="submit">Login</button>
                 </form>
