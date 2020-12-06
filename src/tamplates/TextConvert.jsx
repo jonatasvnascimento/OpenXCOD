@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Calculadora() {
+export default function TextConvert(){
     return (
         <div>
-            <h1>Calculadora</h1>
+            <h1>text converter</h1>
         </div>
     )
 }

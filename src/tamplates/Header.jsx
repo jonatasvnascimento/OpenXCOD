@@ -53,6 +53,7 @@ export default function Header(props) {
                 <form className="form-inline my-2 my-lg-0">
                      <Link to="#" className="btn btn-outline-primary">Sign up</Link>
                 </form>
+                
             </div>
         </nav>
 

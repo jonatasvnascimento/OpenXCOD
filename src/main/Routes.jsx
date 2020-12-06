@@ -3,17 +3,25 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import Tools from '../tamplates/Tools'
 import Home from '../tamplates/Home'
 import Noticias from '../tamplates/Noticias'
-import Calculadora from '../tamplates/Calculadora'
+import Calculator from '../tamplates/Calculator'
 import GhostBit from '../tamplates/GhostBit'
+import TextConvert from '../tamplates/TextConvert'
 
 export default function app() {
     return (
         <Switch>
+            {/* Rotas Header */}
             <Route exact path="/" component={Home} />
             <Route path="/tools" component={Tools} />
             <Route path="/noticias" component={Noticias} />
-            <Route path="/calculadora" component={Calculadora} />
+            <Route path="/calculator" component={Calculator} />
             <Route path="/criacao-de-sites" component={GhostBit} />
+
+            {/* Rotas Tools */}
+            <Route path="/text-convert" component={TextConvert} />
+
+
+
             <Redirect from="*" to="/"/> 
             
         </Switch>

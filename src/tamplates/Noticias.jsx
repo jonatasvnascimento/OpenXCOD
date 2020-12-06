@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './css/Noticias.css'
 
 
 export default function Noticia() {
     return (
-        <div className="container">
+        <div className="container config_not text-dark">
             <div className="nav-scroller py-1 mb-2">
                 <nav className="nav d-flex justify-content-center">
 
