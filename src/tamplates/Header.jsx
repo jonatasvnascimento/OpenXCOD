@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom'
 
 import {
@@ -11,9 +11,9 @@ import {
 
 export default function Header(props) {
 
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
 
-    const toggle = () => setIsOpen(!isOpen);
+    // const toggle = () => setIsOpen(!isOpen);
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
@@ -41,9 +41,9 @@ export default function Header(props) {
 
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>Outro Seriviços</DropdownToggle>
-                            <DropdownMenu right><DropdownItem>Conversor de Particulas</DropdownItem>
+                                <DropdownMenu right><DropdownItem>Conversor de Particulas</DropdownItem>
                                 <DropdownItem>Prototipo Jarvis</DropdownItem>
-
+                                
                             </DropdownMenu>
                         </UncontrolledDropdown>
 
@@ -51,7 +51,7 @@ export default function Header(props) {
                 </div>
 
                 <form className="form-inline my-2 my-lg-0">
-                    <Link to="#" className="btn btn-outline-primary">Sign up</Link>
+                     <Link to="#" className="btn btn-outline-primary">Sign up</Link>
                 </form>
             </div>
         </nav>
