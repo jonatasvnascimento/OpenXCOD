@@ -7,6 +7,8 @@ export default function Tools() {
         <div className="container">
             <div className="row row-cols-0 row-cols-md-4 justify-content-center ">
 
+                {/* Refatorar Card em componente separado */}
+
                 <div className="card-deck ">
                     <div className="card text-white bg-dark mb-3 mr-4 ">
                         <div className="card-body ">
@@ -25,7 +27,7 @@ export default function Tools() {
                             <p className="card-text ">Projeto calculadora cientifica</p>
                         </div>
                         <div className="card-footer">
-                            <Link to="/text-convert" className="btn btn-primary ">Começar</Link>
+                            <Link to="#" className="btn btn-primary ">Começar</Link>
                         </div>
                     </div>
                 </div>

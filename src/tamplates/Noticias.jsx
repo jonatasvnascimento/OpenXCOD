@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './css/Noticias.css'
 
+// refatorar componets e criar blog completo
 
 export default function Noticia() {
     return (
