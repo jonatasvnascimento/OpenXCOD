@@ -6,133 +6,44 @@ import { Link } from 'react-router-dom'
 
 export default function Footer(props) {
     return (
-        
-            <footer className="footer-area footer--light footer-config ">
-                <div className="footer-big">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-3 col-sm-12">
-                                <div className="footer-widget">
-                                    <div className="widget-about">
-                                        <img src="http://placehold.it/250x80" alt="" className="img-fluid" />
-                                        <ul className="contact-details">
-                                            <li>
-                                                <span className="icon-earphones"></span> Telefone:
-                                            <Link to="#" href="tel:344-755-111">55 11 3487-7741</Link>
-                                            </li>
-                                            <li>
-                                                <span className="icon-envelope-open"></span>
-                                                <Link to="#" href="mailto:support@aazztech.com">OpenXCOD@.void.com</Link>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-md-3 col-sm-4">
-                                <div className="footer-widget">
-                                    <div className="footer-menu footer-menu--1">
-                                        <h4 className="footer-widget-title">Popular Category</h4>
-                                        <ul>
-                                            <li>
-                                                <Link to="#">Wordpress</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">Plugins</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">Joomla Template</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">Admin Template</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">HTML Template</Link>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-md-3 col-sm-4">
-                                <div className="footer-widget">
-                                    <div className="footer-menu">
-                                        <h4 className="footer-widget-title">Our Company</h4>
-                                        <ul>
-                                            <li>
-                                                <Link to="#">About Us</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">How It Works</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">Affiliates</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">Testimonials</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">Contact Us</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">Plan &amp; Pricing</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">Blog</Link>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-md-3 col-sm-4">
-                                <div className="footer-widget">
-                                    <div className="footer-menu no-padding">
-                                        <h4 className="footer-widget-title">Help Support</h4>
-                                        <ul>
-                                            <li>
-                                                <Link to="#">Support Forum</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">Terms &amp; Conditions</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">Support Policy</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">Refund Policy</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">FAQs</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">Buyers Faq</Link>
-                                            </li>
-                                            <li>
-                                                <Link to="#">Sellers Faq</Link>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div className="container footer-config">
+            <footer className="pt-4 my-md-5 pt-md-5 border-top">
+                <div className="row">
+                    <div className="col-12 col-md">
+                        <Link to="/" className="navbar-brand">OpenXCOD</Link>
+                        <small className="d-block mb-3 text-muted">&copy; 2017-2020</small>
                     </div>
-                </div>
-
-                <div className="mini-footer">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-12">
-                                <div className="copyright-text">
-                                    <p>© 2021
-                                <Link to="#" > OpenXCOD</Link> .All rights reserved. Created by
-                                <Link to="#" > OpenXCOD</Link>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="col-6 col-md">
+                        <h5>Features</h5>
+                        <ul className="list-unstyled text-small">
+                            <li><Link to="#" className="text-muted" >Cool stuff</Link></li>
+                            <li><Link to="#" className="text-muted" >Random feature</Link></li>
+                            <li><Link to="#" className="text-muted" >Team feature</Link></li>
+                            <li><Link to="#" className="text-muted" >Stuff for developers</Link></li>
+                            <li><Link to="#" className="text-muted" >Another one</Link></li>
+                            <li><Link to="#" className="text-muted" >Last time</Link></li>
+                        </ul>
+                    </div>
+                    <div className="col-6 col-md">
+                        <h5>Resources</h5>
+                        <ul className="list-unstyled text-small">
+                            <li><Link to="#" className="text-muted" >Resource</Link></li>
+                            <li><Link to="#" className="text-muted" >Resource name</Link></li>
+                            <li><Link to="#" className="text-muted" >Another resource</Link></li>
+                            <li><Link to="#" className="text-muted" >Final resource</Link></li>
+                        </ul>
+                    </div>
+                    <div className="col-6 col-md">
+                        <h5>About</h5>
+                        <ul className="list-unstyled text-small">
+                            <li><Link to="#" className="text-muted" >Team</Link></li>
+                            <li><Link to="#" className="text-muted" >Locations</Link></li>
+                            <li><Link to="#" className="text-muted" >Privacy</Link></li>
+                            <li><Link to="#" className="text-muted" >Terms</Link></li>
+                        </ul>
                     </div>
                 </div>
             </footer>
+        </div>
     )
 }
