@@ -38,7 +38,6 @@ const TextConvert = (props) => {
                                         <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Caso Inverso</Link>
                                         <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Copiar</Link>
                                         <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Limpar</Link>
-
                                     </div>
                                 </div>
                                 <div className="form-group">
@@ -51,13 +50,38 @@ const TextConvert = (props) => {
                 </TabPane>
                 <TabPane tabId="2">
                     <Row>
-                        <Col sm="6">
-                            <div className="container mt-3">
-                                <div className="row">
-                                    <div className="col-sm-10 mb-3">
-                                            <textarea></textarea>
-                                            <textarea></textarea>
-                                           
+                        <Col>
+                            <div className="container">
+                                <div className="row mt-3">
+                                    <div className="row">
+                                        <ul class="list-group list-group-flush">
+                                            <Link to="#" className="btn btn-primary mb-1">Codificar</Link>
+                                            <Link to="#" className="btn btn-primary mb-1">Codificar</Link>
+                                            <Link to="#" className="btn btn-primary mb-1">Codificar</Link>
+
+                                        </ul>
+                                        <div className="col-sm-4">
+                                            <div className="card">
+                                                <div className="card-body">
+                                                    <h5 className="card-title">Codificador</h5>
+                                                    <div className="form-group">
+                                                        <textarea className="form-control" rows="12" cols="60"></textarea>
+                                                    </div>
+                                                    <Link to="#" className="btn btn-primary">Codificar</Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-4">
+                                            <div className="card">
+                                                <div className="card-body">
+                                                    <h5 className="card-title">Decodificador</h5>
+                                                    <div className="form-group">
+                                                        <textarea className="form-control" rows="12" cols="60"></textarea>
+                                                    </div>
+                                                    <Link to="#" className="btn btn-primary">Decodificar</Link>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
