@@ -13,7 +13,7 @@ const TextConvert = (props) => {
     }
 
     return (
-        <div className="container mb-5">
+        <div className="container mb-5 mt-3">
             <Nav tabs>
                 <NavItem>
                     <NavLink className={classnames({ active: activeTab === '1' })} onClick={() => { toggle('1'); }}>Converter Texto</NavLink>
@@ -27,18 +27,24 @@ const TextConvert = (props) => {
                     <Row>
                         <Col sm="12">
                             <div className="container mt-3 ">
-                                <nav className="navbar navbar-expand-lg ">
-                                    <div className="collapse navbar-collapse ">
-                                        <ul className="navbar-nav ">
-                                            <li className="nav-item">
-                                                <Link to="#" className="nav-link btn btn-secondary mr-3 mb-3">Tirar maiusculas</Link>
-                                            </li>
-                                            <li className="nav-item">
-                                                <Link to="#" className="nav-link btn btn-secondary mr-3 mb-3">Deixar Promeira Maiscula</Link>
-                                            </li>
-                                        </ul>
+                                <div className="row">
+                                    <div className="col-sm-15 mb-3">
+                                        <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Primeiro Letra Maiúscula</Link>
+                                        <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Minúscula</Link>
+                                        <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Maiúscula</Link>
+                                        <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Caixa Capitalizada</Link>
+                                        <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Caso Alternado</Link>
+                                        <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Caixa de Titulo</Link>
+                                        <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Caso Inverso</Link>
+                                        <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Copiar</Link>
+                                        <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Limpar</Link>
+
                                     </div>
-                                </nav>
+                                </div>
+                                <div className="form-group">
+                                    <label>Digite um texto:</label>
+                                    <textarea className="form-control" rows="10"></textarea>
+                                </div>
                             </div>
                         </Col>
                     </Row>
@@ -47,7 +53,13 @@ const TextConvert = (props) => {
                     <Row>
                         <Col sm="6">
                             <div className="container mt-3">
-
+                                <div className="row">
+                                    <div className="col-sm-10 mb-3">
+                                            <textarea></textarea>
+                                            <textarea></textarea>
+                                           
+                                    </div>
+                                </div>
                             </div>
                         </Col>
                     </Row>
