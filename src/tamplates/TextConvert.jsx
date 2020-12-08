@@ -21,6 +21,9 @@ const TextConvert = (props) => {
                 <NavItem>
                     <NavLink className={classnames({ active: activeTab === '2' })} onClick={() => { toggle('2'); }}>Codigo Binario</NavLink>
                 </NavItem>
+                <NavItem>
+                    <NavLink className={classnames({ active: activeTab === '3' })} onClick={() => { toggle('3'); }}>Teste</NavLink>
+                </NavItem>
             </Nav>
             <TabContent activeTab={activeTab}>
                 <TabPane tabId="1">
@@ -54,12 +57,16 @@ const TextConvert = (props) => {
                             <div className="container">
                                 <div className="row mt-3">
                                     <div className="row">
-                                        <ul class="list-group list-group-flush">
-                                            <Link to="#" className="btn btn-primary mb-1">Codificar</Link>
-                                            <Link to="#" className="btn btn-primary mb-1">Codificar</Link>
-                                            <Link to="#" className="btn btn-primary mb-1">Codificar</Link>
 
+                                        <ul className="list-group list-group-flush">
+                                            <li className="list-group-item"><Link to="#" className="btn btn-secondary">Texto >> Binario</Link></li>
+                                            <li className="list-group-item"><Link to="#" className="btn btn-secondary">Texto >> Ascii</Link></li>
+                                            <li className="list-group-item"><Link to="#" className="btn btn-secondary">Texto >> Hex</Link></li>
+                                            <li className="list-group-item"><Link to="#" className="btn btn-secondary">Binario >> Texto</Link></li>
+                                            <li className="list-group-item"><Link to="#" className="btn btn-secondary">Ascii >> Texto</Link></li>
+                                            <li className="list-group-item"><Link to="#" className="btn btn-secondary">Hex >> Texto</Link></li>
                                         </ul>
+
                                         <div className="col-sm-4">
                                             <div className="card">
                                                 <div className="card-body">
@@ -88,6 +95,41 @@ const TextConvert = (props) => {
                         </Col>
                     </Row>
                 </TabPane>
+                <TabPane tabId="3">
+                    <Row>
+                        <Col>
+                            <div className="container">
+                                <div className="row mt-3">
+                                    <div className="row">
+                                        <div className="col-sm-4">
+                                            <div className="card">
+                                                <div className="card-body">
+                                                    <h5 className="card-title">Codificador</h5>
+                                                    <div className="form-group">
+                                                        <textarea className="form-control" rows="12" cols="60"></textarea>
+                                                    </div>
+                                                    <Link to="#" className="btn btn-primary">Codificar</Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-4">
+                                            <div className="card">
+                                                <div className="card-body">
+                                                    <h5 className="card-title">Decodificador</h5>
+                                                    <div className="form-group">
+                                                        <textarea className="form-control" rows="12" cols="60"></textarea>
+                                                    </div>
+                                                    <Link to="#" className="btn btn-primary">Decodificar</Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </TabPane>
+
             </TabContent>
         </div>
     );
