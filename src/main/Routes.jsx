@@ -5,7 +5,7 @@ import Home from '../tamplates/Home'
 import Noticias from '../tamplates/Noticias'
 import Calculator from '../tamplates/Calculator'
 import GhostBit from '../tamplates/GhostBit'
-import TextConvert from '../tamplates/TextConvert'
+import TextConvert from '../tamplates/ConvertForm'
 
 export default function app() {
     return (
@@ -18,7 +18,7 @@ export default function app() {
             <Route path="/criacao-de-sites" component={GhostBit} />
 
             {/* Rotas Tools */}
-            <Route path="/text-convert" component={TextConvert} />
+            <Route path="/convert-form" component={TextConvert} />
 
 
 

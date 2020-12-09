@@ -20,7 +20,7 @@ export default function Tools() {
                                 <p className="card-text mb-1">Plataforma de converção de texto, binario entre outros</p>
                             </div>
                             <div className="card-footer">
-                                <Link to="/text-convert" className="btn btn-secondary">Começar</Link>
+                                <Link to="/convert-form" className="btn btn-secondary">Começar</Link>
                             </div>
                         </div>
                     </div>
