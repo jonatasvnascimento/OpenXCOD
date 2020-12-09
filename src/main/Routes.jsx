@@ -19,8 +19,7 @@ export default function app() {
 
             {/* Rotas Tools */}
             <Route path="/convert-form" component={TextConvert} />
-
-
+            
 
             <Redirect from="*" to="/"/> 
             
