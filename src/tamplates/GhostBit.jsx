@@ -1,9 +1,10 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function GhostBit() {
     return (
-        <div>
-            <h1>GhostBit</h1>
+        <div className="container">
+            <Link to="https://ghostbit.com.br">GhostBit</Link>
         </div>
     )
 }

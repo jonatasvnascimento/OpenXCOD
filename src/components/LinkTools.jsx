@@ -7,7 +7,6 @@ export default function LinkTools(props) {
             <div className="card text-white bg-dark mb-3">
                 <div className="card-header">{props.title}</div>
                 <div className="card-body">
-                    <h5 className="card-title">{props.subtitle}</h5>
                     <p className="card-text">{props.description}</p>
                     <Link to={props.linkgo} className="btn btn-secondary">Começar</Link>
                 </div>

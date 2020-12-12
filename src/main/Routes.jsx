@@ -8,13 +8,13 @@ import Noticias from '../tamplates/Noticias'
 import GhostBit from '../tamplates/GhostBit'
 
 // Tools
-import ConvertBox from '../components/ConvertBox'
-import ConvertBase from '../components/ConvertBase'
-import ConvertUnit from '../components/ConvertUnit'
-import Calculator from '../components/Calculator'
+import ConvertBox from '../components/ConvertBox/ConvertBox'
+import ConvertBase from '../components/ConvertBase/ConvertBase'
+import ConvertUnit from '../components/ConvertUnit/ConvertUnit'
+import Calculator from '../components/Calculator/Calculator'
 
 //teste
-import Teste from '../components/Teste'
+// import Teste from '../components/Teste'
 
 export default function app() {
     return (
@@ -32,7 +32,7 @@ export default function app() {
             <Route path="/calculator" component={Calculator} />
 
             {/* Teste tamplate */}
-            <Route path="/teste" component={Teste} />
+            {/* <Route path="/teste" component={Teste} /> */}
 
             
 
