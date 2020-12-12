@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import LinkTools from '../components/LinkTools'
 
 export default function Tools() {
     return (
@@ -8,50 +8,14 @@ export default function Tools() {
                 <h1 className="display-4">Ferramentas</h1>
                 <p className="lead">Area destina a Ferramentas para auxiliar trabalhos da faculdade, calculos matematicos, entre outros...</p>
             </div>
-            <div className="container">
-                <div className="row">
-                    <div className="col-12 col-sm-2 col-md-4 col-lg-3 col-xl-3">
-                        <div className="card text-white bg-dark mb-3 teste">
-                            <div className="card-header">Cabeçalho</div>
-                            <div className="card-body">
-                                <h5 className="card-title">Título de Card Dark</h5>
-                                <p className="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                                <Link to="/teste" className="btn btn-secondary mb-2 mr-2">Go</Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-12 col-sm-2 col-md-4 col-lg-3 col-xl-3">
-                        <div className="card text-white bg-dark mb-3 teste">
-                            <div className="card-header">Cabeçalho</div>
-                            <div className="card-body">
-                                <h5 className="card-title">Título de Card Dark</h5>
-                                <p className="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                                <Link to="/teste" className="btn btn-secondary mb-2 mr-2">Go</Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-12 col-sm-2 col-md-4 col-lg-3 col-xl-3">
-                        <div className="card text-white bg-dark mb-3 teste">
-                            <div className="card-header">Cabeçalho</div>
-                            <div className="card-body">
-                                <h5 className="card-title">Título de Card Dark</h5>
-                                <p className="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                                <Link to="/teste" className="btn btn-secondary mb-2 mr-2">Go</Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-12 col-sm-2 col-md-4 col-lg-3 col-xl-3">
-                        <div className="card text-white bg-dark mb-3 teste">
-                            <div className="card-header">Cabeçalho</div>
-                            <div className="card-body">
-                                <h5 className="card-title">Título de Card Dark</h5>
-                                <p className="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                                <Link to="/teste" className="btn btn-secondary mb-2 mr-2">Go</Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className="row">
+                <LinkTools linkgo="/teste" title="Conversor de Texto" subtitle="Conversor de Texto" description="Converta seus texto mais rapido com essa ferramenta" />
+                <LinkTools linkgo="/teste" title="Conversor de Texto" subtitle="Conversor de Texto" description="Converta seus texto mais rapido com essa ferramenta" />
+                <LinkTools linkgo="/teste" title="Conversor de Texto" subtitle="Conversor de Texto" description="Converta seus texto mais rapido com essa ferramenta" />
+                <LinkTools linkgo="/teste" title="Conversor de Texto" subtitle="Conversor de Texto" description="Converta seus texto mais rapido com essa ferramenta" />
+                <LinkTools linkgo="/teste" title="Conversor de Texto" subtitle="Conversor de Texto" description="Converta seus texto mais rapido com essa ferramenta" />
             </div>
+
         </div>
 
     )

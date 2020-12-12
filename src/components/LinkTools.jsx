@@ -3,19 +3,16 @@ import { Link } from 'react-router-dom'
 
 export default function LinkTools(props) {
     return (
-        <div className="container mt-4">
-            <div className="row">
-                <div className="col-sm-4 col-md-3 mb-3">
-                    <div class="card text-white bg-dark mb-3 teste">
-                        <div class="card-header">Cabeçalho</div>
-                        <div class="card-body">
-                            <h5 class="card-title">Título de Card Dark</h5>
-                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                            <Link to="/teste" className="btn btn-secondary mb-2 mr-2">GO</Link>
-                        </div>
-                    </div>
+        <div className="col-12 col-sm-2 col-md-4 col-lg-3 col-xl-3">
+            <div className="card text-white bg-dark mb-3">
+                <div className="card-header">{props.title}</div>
+                <div className="card-body">
+                    <h5 className="card-title">{props.subtitle}</h5>
+                    <p className="card-text">{props.description}</p>
+                    <Link to={props.linkgo} className="btn btn-secondary">Começar</Link>
                 </div>
             </div>
         </div>
+
     )
 }
