@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './css/ConvertForm.css'
 
 import ConvertBox from '../components/ConvertBox'
 import ConvertBase from '../components/ConvertBase'
@@ -10,7 +9,7 @@ import ConvertUnit from '../components/ConvertUnit'
 import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import classnames from 'classnames';
 
-const TextConvert = (props) => {
+const Calculator = (props) => {
     const [activeTab, setActiveTab] = useState('1');
 
     const toggle = tab => {
@@ -46,4 +45,4 @@ const TextConvert = (props) => {
     );
 }
 
-export default TextConvert;
+export default Calculator;

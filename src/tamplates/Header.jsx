@@ -21,7 +21,7 @@ const Example = (props) => {
 
         <Navbar light expand="md shadow-sm">
             <div className="container">
-                    <Link to="/" className="navbar-brand">OpenXCOD</Link>
+                    <Link to="/" className="navbar-brand">ProjectXCOD</Link>
                     <NavbarToggler onClick={toggle} />
                     <Collapse isOpen={isOpen} navbar>
                         <Nav className="mr-auto" navbar>

@@ -1,11 +1,20 @@
 import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
+
+// Tamplate
 import Tools from '../tamplates/Tools'
 import Home from '../tamplates/Home'
 import Noticias from '../tamplates/Noticias'
-import Calculator from '../tamplates/Calculator'
 import GhostBit from '../tamplates/GhostBit'
-import TextConvert from '../tamplates/ConvertForm'
+
+// Tools
+import ConvertBox from '../components/ConvertBox'
+import ConvertBase from '../components/ConvertBase'
+import ConvertUnit from '../components/ConvertUnit'
+import Calculator from '../components/Calculator'
+
+//teste
+import Teste from '../components/Teste'
 
 export default function app() {
     return (
@@ -14,11 +23,17 @@ export default function app() {
             <Route exact path="/" component={Home} />
             <Route path="/tools" component={Tools} />
             <Route path="/noticias" component={Noticias} />
-            <Route path="/calculator" component={Calculator} />
             <Route path="/criacao-de-sites" component={GhostBit} />
 
             {/* Rotas Tools */}
-            <Route path="/convert-form" component={TextConvert} />
+            <Route path="/convert-box" component={ConvertBox} />
+            <Route path="/convert-base" component={ConvertBase} />
+            <Route path="/convert-unit" component={ConvertUnit} />
+            <Route path="/calculator" component={Calculator} />
+
+            {/* Teste tamplate */}
+            <Route path="/teste" component={Teste} />
+
             
 
             <Redirect from="*" to="/"/> 
