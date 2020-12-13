@@ -13,6 +13,7 @@ export default class Calculator extends Component {
                     <Button label={0}/>
                     <Button label={0}/>
                     <Button label={0}/>
+                    <Button label={0}/>
                 </div>
             </div>
 
