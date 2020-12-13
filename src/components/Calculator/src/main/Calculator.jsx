@@ -35,14 +35,14 @@ export default class Calculator extends Component {
             const currentOperation = this.state.operation
             const values = [...this.state.values]
         
-            const porcentageCalc = (porcentage, value_calc) => {
-                let calc_final = parseFloat(porcentage * (value_calc / 100))
-                return calc_final
-            }
+            // const porcentageCalc = (porcentage, value_calc) => {
+            //     let calc_final = parseFloat(porcentage * (value_calc / 100))
+            //     return calc_final
+            // }
 
-            const square_root = (num_calc) => {
-                return Math.sqrt(num_calc).toFixed(1)
-            }
+            // const square_root = (num_calc) => {
+            //     return Math.sqrt(num_calc).toFixed(1)
+            // }
 
             try {
                 // values[0] = eval(`${values[0]} ${currentOperation} ${values[1]}`)
@@ -59,21 +59,21 @@ export default class Calculator extends Component {
                     case '/':
                         values[0] /= values[1]                   
                         break    
-                    case '%':
-                        if (values[0] = porcentageCalc(values[0], values[1])) {
-                            return values[0] = porcentageCalc(values[0], values[1])
-                        } else {
-                            values[0] = this.state.values[0]    
-                        }                     
-                        break
-                    case '√':
-                        if (values[0] = square_root(values[0])) {
-                            return values[0] = square_root(values[0])
-                        } else {
-                            values[0] = this.state.values[0]
-                        }
+                    // case '%':
+                    //     if (values[0] = porcentageCalc(values[0], values[1])) {
+                    //         return values[0] = porcentageCalc(values[0], values[1])
+                    //     } else {
+                    //         values[0] = this.state.values[0]    
+                    //     }                     
+                    //     break
+                    // case '√':
+                    //     if (values[0] = square_root(values[0])) {
+                    //         return values[0] = square_root(values[0])
+                    //     } else {
+                    //         values[0] = this.state.values[0]
+                    //     }
                         
-                        break
+                    //     break
                     default:
                         break;
                 }
