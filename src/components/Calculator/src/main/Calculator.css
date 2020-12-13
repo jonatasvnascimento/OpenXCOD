@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../fonts/RobotoMono-Thin.ttf');
+}
+
+.calculator {
+    height: 320px;
+    width: 235px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgb(255, 0, 0);
+    font-family: 'RobotoMono', monospace;
+}
+
+.center {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(to right, rgb(0, 198, 255), rgb(0, 114, 255));
+}

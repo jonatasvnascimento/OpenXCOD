@@ -11,7 +11,7 @@ import GhostBit from '../tamplates/GhostBit'
 import ConvertBox from '../components/ConvertBox/ConvertBox'
 import ConvertBase from '../components/ConvertBase/ConvertBase'
 import ConvertUnit from '../components/ConvertUnit/ConvertUnit'
-import Calculator from '../components/Calculator/Calculator'
+import Calculator from '../components/Calculator/src/main/Calculator'
 
 //teste
 // import Teste from '../components/Teste'
