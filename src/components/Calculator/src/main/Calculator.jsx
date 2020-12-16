@@ -56,7 +56,7 @@ export default class Calculator extends Component {
                         values[0] /= values[1]
                         break
                     case '%':
-                        values[0] = (`${values[0] * (values[1] / 100)}`)
+                        values[0] = (`${parseFloat(values[0] * (values[1] / 100))}`)
                         break
                     case '√':
                         values[0] = square_root(values[0])

@@ -10,8 +10,8 @@ export default function Footer(props) {
             <footer className="pt-4 my-md-5 pt-md-5 border-top">
                 <div className="row">
                     <div className="col-12 col-md">
-                        <Link to="/" className="navbar-brand">ProjectXCOD</Link>
-                        <small className="d-block mb-3 text-muted">&copy; 2017-2020</small>
+                        <Link to="/" className="navbar-brand">OpenXCOD</Link>
+                        <small className="d-block mb-3 text-muted">&copy; 2020-2021</small>
                     </div>
                     <div className="col-6 col-md">
                         <h5>Features</h5>
