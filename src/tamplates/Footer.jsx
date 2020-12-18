@@ -2,7 +2,6 @@ import React from 'react'
 import './css/Footer.css'
 import { Link } from 'react-router-dom'
 
-// Mexer no tamanho do footer
 
 export default function Footer(props) {
     return (
