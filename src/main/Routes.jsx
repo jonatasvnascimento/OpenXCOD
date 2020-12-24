@@ -13,8 +13,6 @@ import ConvertBase from '../components/ConvertBase/ConvertBase'
 import ConvertUnit from '../components/ConvertUnit/ConvertUnit'
 import Calculator from '../components/Calculator/src/main/Calculator'
 
-//teste
-// import Teste from '../components/Teste'
 
 export default function app() {
     return (
@@ -29,12 +27,9 @@ export default function app() {
             <Route path="/convert-box" component={ConvertBox} />
             <Route path="/convert-base" component={ConvertBase} />
             <Route path="/convert-unit" component={ConvertUnit} />
-            <Route path="/calculator" component={Calculator} />
+            <Route path="/calculator" component={Calculator} /> 
 
-            {/* Teste tamplate */}
-            {/* <Route path="/teste" component={Teste} /> */}
-
-            
+            {/*  */}
 
             <Redirect from="*" to="/"/> 
             
