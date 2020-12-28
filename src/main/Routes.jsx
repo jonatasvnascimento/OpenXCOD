@@ -13,6 +13,11 @@ import ConvertBase from '../components/ConvertBase/ConvertBase'
 import ConvertUnit from '../components/ConvertUnit/ConvertUnit'
 import Calculator from '../components/Calculator/src/main/Calculator'
 
+// Area de estudo do curso
+import Study from '../tamplates/Study'
+
+
+
 
 export default function app() {
     return (
@@ -29,7 +34,8 @@ export default function app() {
             <Route path="/convert-unit" component={ConvertUnit} />
             <Route path="/calculator" component={Calculator} /> 
 
-            {/*  */}
+            {/* Area de studo do curso */}
+            <Route path="/study" component={Study} /> 
 
             <Redirect from="*" to="/"/> 
             

@@ -39,6 +39,7 @@ export default function Footer(props) {
                             <li><Link to="#" className="text-muted" >Locations</Link></li>
                             <li><Link to="#" className="text-muted" >Privacy</Link></li>
                             <li><Link to="#" className="text-muted" >Terms</Link></li>
+                            <li><Link to="/study" className="text-muted" >Study</Link></li>
                         </ul>
                     </div>
                 </div>
