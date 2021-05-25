@@ -9,7 +9,7 @@ class Filmes extends Component {
     }
 
     async componentDidMount() {
-        const response = await Api_filmes.get('');
+        const response = await Api_filmes.get('start%20war');
         this.setState({ filmes: response.data });
     }
 
