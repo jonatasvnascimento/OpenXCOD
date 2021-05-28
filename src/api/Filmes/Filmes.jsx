@@ -19,7 +19,7 @@ class Filmes extends Component {
             <div className="container mt-3 ">
                 Lista de filmes
                 {filmes.map(f => (
-                    <div className="card mb-1 style_card">
+                    <div key={f.show.id} className="card mb-1 style_card">
                         <div className="row g-0">
                             <div className="col-md-3">
                                 <img
