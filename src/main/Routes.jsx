@@ -13,7 +13,6 @@ import ConvertUnit from '../components/ConvertUnit/ConvertUnit'
 import Calculator from '../components/Calculator/src/main/Calculator'
 
 //API
-import Filmes from '../api/Filmes/Filmes'
 import Noticias from '../api/Noticias/Noticias'
 import Endereco from '../api/Endereco/Endereco'
 
@@ -38,7 +37,6 @@ export default function app() {
             <Route path="/calculator" component={Calculator} /> 
 
             {/* Rotas API */}
-            <Route path="/filmes" component={Filmes}/>
             <Route path="/noticias" component={Noticias}/>
             <Route path="/endereco" component={Endereco}/>
 
