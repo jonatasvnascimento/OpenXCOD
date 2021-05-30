@@ -11,7 +11,7 @@
 
 .box {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.116);
+    background: linear-gradient(to right, rgb(0, 159, 255), rgb(236, 47, 75));
     border-radius: 10px;
     height: 100vh;
     justify-content: center;
