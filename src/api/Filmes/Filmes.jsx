@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Api_filmes from './API_filmes'
 import './Style/Filmes.css'
 
 export default class Filmes extends Component {
@@ -11,38 +10,43 @@ export default class Filmes extends Component {
             value: '',
         }
 
+
+
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChange(event) {
         this.setState({ value: event.target.value });
+
     }
 
     handleSubmit(event) {
-        fetch(`https://api.tvmaze.com/search/shows?q=${this.state.value}`)
+        let value = this.state.value
+
+        fetch(`https://api.tvmaze.com/search/shows?q=${value}`)
             .then((res) => res.json())
             .then((data) => {
                 this.setState({
                     filmes: data
                 })
-
             })
             .catch((e) => {
-                alert('Error')
+                console.log(`Quebra: ${e}`)
             })
         event.preventDefault();
     }
 
 
-    async componentDidMount() {
-        const response = await Api_filmes.get('star wars',);
-        this.setState({ filmes: response.data });
+    // async componentDidMount() {
+    //     const response = await Api_filmes.get('star wars',);
+    //     this.setState({ filmes: response.data });
 
-    }
+    // }
 
     render() {
         const { filmes } = this.state
+       
         return (
             <div className="container mt-3 ">
 
@@ -70,6 +74,7 @@ export default class Filmes extends Component {
                                     <p className="card-text">
                                         {f.show.status}</p>
                                     <p className="card-text">
+                                        
                                         <small className="text-muted">Last updated 3 mins ago</small>
                                     </p>
                                 </div>
