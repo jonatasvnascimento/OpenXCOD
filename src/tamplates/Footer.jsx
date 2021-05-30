@@ -5,45 +5,97 @@ import { Link } from 'react-router-dom'
 
 export default function Footer(props) {
     return (
-        <div className="container footer-config">
-            <footer className="pt-4 my-md-5 pt-md-5 border-top">
-                <div className="row">
-                    <div className="col-12 col-md">
-                        <Link to="/" className="navbar-brand">OpenXCOD</Link>
-                        <small className="d-block mb-3 text-muted">&copy; 2020-2021</small>
-                    </div>
-                    <div className="col-6 col-md">
-                        <h5>Features</h5>
-                        <ul className="list-unstyled text-small">
-                            <li><Link to="#" className="text-muted" >Cool stuff</Link></li>
-                            <li><Link to="#" className="text-muted" >Random feature</Link></li>
-                            <li><Link to="#" className="text-muted" >Team feature</Link></li>
-                            <li><Link to="#" className="text-muted" >Stuff for developers</Link></li>
-                            <li><Link to="#" className="text-muted" >Another one</Link></li>
-                            <li><Link to="#" className="text-muted" >Last time</Link></li>
-                        </ul>
-                    </div>
-                    <div className="col-6 col-md">
-                        <h5>Resources</h5>
-                        <ul className="list-unstyled text-small">
-                            <li><Link to="#" className="text-muted" >Resource</Link></li>
-                            <li><Link to="#" className="text-muted" >Resource name</Link></li>
-                            <li><Link to="#" className="text-muted" >Another resource</Link></li>
-                            <li><Link to="#" className="text-muted" >Final resource</Link></li>
-                        </ul>
-                    </div>
-                    <div className="col-6 col-md">
-                        <h5>About</h5>
-                        <ul className="list-unstyled text-small">
-                            <li><Link to="#" className="text-muted" >Team</Link></li>
-                            <li><Link to="#" className="text-muted" >Locations</Link></li>
-                            <li><Link to="#" className="text-muted" >Privacy</Link></li>
-                            <li><Link to="#" className="text-muted" >Terms</Link></li>
-                            <li><Link to="/study" className="text-muted" >Study</Link></li>
-                        </ul>
+        <footer className="text-center text-lg-start  text-muted container ">
+            <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <div className="me-5 d-none d-lg-block">
+                    <span>Se conecte a OpenXCOD atraves das redes sociais:</span>
+                </div>
+                <div>
+                    <Link className="me-4 text-reset" to="">
+                        <i className="fab fa-facebook-f"></i>
+                    </Link>
+                    <Link className="me-4 text-reset" to="">
+                        <i className="fab fa-twitter"></i>
+                    </Link>
+                    <Link className="me-4 text-reset" to="">
+                        <i className="fab fa-google"></i>
+                    </Link>
+                    <Link className="me-4 text-reset" to="">
+                        <i className="fab fa-instagram"></i>
+                    </Link>
+                    <Link className="me-4 text-reset" to="">
+                        <i className="fab fa-linkedin"></i>
+                    </Link>
+                    <Link className="me-4 text-reset" to="">
+                        <i className="fab fa-github"></i>
+                    </Link>
+
+                </div>
+            </section>
+
+            <section className="">
+                <div className="container text-center text-md-start mt-5">
+                    <div className="row mt-3">
+                        <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 className="text-uppercase fw-bold mb-4 " >
+                                <Link to="/study"><i className="fas fa-play me-3 text_decoration"> Study Progress</i></Link>
+
+                            </h6>
+                            <p>
+                                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+
+                        <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 className="text-uppercase fw-bold mb-4">
+                                Products</h6>
+                            <p>
+                                <a href="#!" className="text-reset">Aplicativos</a>
+                            </p>
+                            <p>
+                                <a href="#!" className="text-reset">Noticias</a>
+                            </p>
+                            <p>
+                                <a href="#!" className="text-reset">API</a>
+                            </p>
+                            <p>
+                                <a href="#!" className="text-reset">Portifolio</a>
+                            </p>
+                        </div>
+
+                        <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 className="text-uppercase fw-bold mb-4">
+                                Useful links</h6>
+                            <p>
+                                <a href="#!" className="text-reset">Pricing</a>
+                            </p>
+                            <p>
+                                <a href="#!" className="text-reset">Settings</a>
+                            </p>
+                            <p>
+                                <a href="#!" className="text-reset">Orders</a>
+                            </p>
+                            <p>
+                                <a href="#!" className="text-reset">Help</a>
+                            </p>
+                        </div>
+
+                        <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <h6 className="text-uppercase fw-bold mb-4">
+                                Contact</h6>
+                            <p><i className="fas fa-home me-3"></i>Home</p>
+                            <p><i className="fas fa-envelope me-3"></i>Email</p>
+                            <p><i className="fas fa-robot me-3"></i>Skynet</p>
+
+                        </div>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </section>
+            <div className="text-center p-4">
+                © 2021
+        <a className="text-reset fw-bold text_decoration" href="https://openxcod.netlify.app/"> OpenXCOD</a>
+            </div>
+
+        </footer>
     )
 }

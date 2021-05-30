@@ -1,0 +1,9 @@
+.text_decoration{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.568);
+}
+.footer_fixed{
+    position:absolute;
+    bottom:0;
+    width:100%;
+}

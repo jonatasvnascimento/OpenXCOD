@@ -52,7 +52,6 @@ export default function Noticia() {
         <div className="container config_not text-dark">
             <div className="nav-scroller py-1 mb-2">
                 <nav className="nav d-flex justify-content-center">
-
                 </nav>
             </div>
 

@@ -32,18 +32,17 @@ const Example = (props) => {
                                 <Link to="/noticias" className="nav-link">Noticias</Link>
                             </NavItem>
                             <NavItem>
-                                <Link to="/filmes" className="nav-link">Filmes</Link>
-                            </NavItem>
-                            <NavItem>
                                 <Link to="/tools" className="nav-link">Ferramentas</Link>
                             </NavItem>
                             <NavItem>
                                 <Link to="/criacao-de-sites" className="nav-link">Criação de Sites</Link>
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>Outro Seriviços</DropdownToggle>
-                                <DropdownMenu right><DropdownItem>Conversor de Particulas</DropdownItem>
-                                    <DropdownItem>Prototipo Jarvis</DropdownItem>
+                                <DropdownToggle nav caret>Application</DropdownToggle>
+                                <DropdownMenu right>
+                                    <DropdownItem><Link to="/filmes" className="text-decoration-none">Filmes</Link></DropdownItem>
+                                    <DropdownItem><Link to="/endereco" className="text-decoration-none">Endereço</Link></DropdownItem>
+                                    <DropdownItem><Link to="/endereco" className="text-decoration-none">FullStackOverFlow</Link></DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                         </Nav>
