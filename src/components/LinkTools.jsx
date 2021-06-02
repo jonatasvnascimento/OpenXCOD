@@ -7,17 +7,17 @@ export default function LinkTools(props) {
             <div className="card text-white bg-dark mb-3">
                 <div className="card-header">{props.title}</div>
                 <div className="card-body">
-                        <h2 class=" mb-4 display-7 lh-1 fw-bold">{props.title}</h2>
-                    <ul class="d-flex list-unstyled mt-auto">
-                        <li class="me-auto">
+                        <h2 className=" mb-4 display-7 lh-1 fw-bold">{props.title}</h2>
+                    <ul className="d-flex list-unstyled mt-auto">
+                        <li className="me-auto">
                             {props.icon}
                         </li>
-                        <li class="d-flex align-items-center me-3">
-                            <svg class="bi me-2" width="1em" height="1em"></svg>
+                        <li className="d-flex align-items-center me-3">
+                            <svg className="bi me-2" width="1em" height="1em"></svg>
                             <small>Earth</small>
                         </li>
-                        <li class="d-flex align-items-center">
-                            <svg class="bi me-2" width="1em" height="1em"></svg>
+                        <li className="d-flex align-items-center">
+                            <svg className="bi me-2" width="1em" height="1em"></svg>
                             <small>3d</small>
                         </li>
                     </ul>
