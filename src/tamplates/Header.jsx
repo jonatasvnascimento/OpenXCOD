@@ -35,14 +35,20 @@ const Example = (props) => {
                                 <Link to="/tools" className="nav-link">Ferramentas</Link>
                             </NavItem>
                             <NavItem>
-                                <Link to="/criacao-de-sites" className="nav-link">Criação de Sites</Link>
+                                <Link to="/entretenimento" className="nav-link">Entretenimento</Link>
                             </NavItem>
-                            <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>Application</DropdownToggle>
+                            {/* <UncontrolledDropdown nav inNavbar>
+                                <DropdownToggle nav caret>Entretenimento</DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem><Link to="/filmes" className="text-decoration-none">Filmes</Link></DropdownItem>
                                     <DropdownItem><Link to="/endereco" className="text-decoration-none">Endereço</Link></DropdownItem>
-                                    <DropdownItem><Link to="/endereco" className="text-decoration-none">FullStackOverFlow</Link></DropdownItem>
+                                    <DropdownItem><Link to="/Series" className="text-decoration-none">Series</Link></DropdownItem>
+                                </DropdownMenu>
+                            </UncontrolledDropdown> */}
+                            <UncontrolledDropdown nav inNavbar>
+                                <DropdownToggle nav caret>API</DropdownToggle>
+                                <DropdownMenu right>
+                                    <DropdownItem><Link to="/filmes" className="text-decoration-none">API teste</Link></DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown>
                         </Nav>

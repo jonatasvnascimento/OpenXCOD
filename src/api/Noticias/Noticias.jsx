@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../Noticias/style/Noticias.css'
+import '../Noticias/css/Noticias.css'
 
 export default function Noticias() {
     return (
