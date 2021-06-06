@@ -4,17 +4,13 @@ import Iframe from 'react-iframe'
 
 export default function IframeSimpson(props) {
     return (
-        <div className="container mt-3">
+        <div className="mt-3">
             <Iframe url={props.url}
-                width="700px"
-                height="470px"
+                width="350px"
+                height="450px"
                 id="myId"
-                overflow="hidden"
                 scrolling="no"
                 loading="eager"
-                className="myClassname"
-                display="initial"
-                position="relative"
                 allow="fullscreen" ></Iframe>
         </div>
     )

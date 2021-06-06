@@ -8,8 +8,8 @@ export default function LayoutSimpson(props) {
 
             <div className="container">
                 <div className="card text-white bg-dark mb-3">
-                    <div class="position-relative">
-                        <div class="position-absolute top-0 start-0 zindex">
+                    <div className="position-relative">
+                        <div className="position-absolute top-0 start-0 zindex">
                             <h4 className="text-dark fw-light font text-center lh-1 ">{props.title}</h4>
                         </div>
                     </div>
