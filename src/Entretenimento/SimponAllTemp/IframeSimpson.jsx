@@ -6,8 +6,8 @@ export default function IframeSimpson(props) {
     return (
         <div className="mt-3">
             <Iframe url={props.url}
-                width="350px"
-                height="450px"
+                width={props.width || '350px'}
+                height={props.height || '450px'}
                 id="myId"
                 scrolling="no"
                 loading="eager"

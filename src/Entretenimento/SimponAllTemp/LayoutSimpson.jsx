@@ -5,7 +5,6 @@ import '../Tamplate/css/features.css'
 export default function LayoutSimpson(props) {
     return (
         <div className="container mt-3">
-
             <div className="container">
                 <div className="card text-white bg-dark mb-3">
                     <div className="position-relative">
