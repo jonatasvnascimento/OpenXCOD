@@ -59,6 +59,18 @@
   background-position: center center;
   background-size: cover;
 }
-.foto{
+.foto1{
   background-image: url('https://1.bp.blogspot.com/--t26BhVId7M/XdgiswGb_xI/AAAAAAAAAao/IQNt-1vK0ZcFgyjJjfjbwBwMl5-g0TN5gCLcBGAsYHQ/s1600/os-simpsons-1a-temporada_t16016.jpg');
+}
+.foto2{
+  background-image: url('https://1.bp.blogspot.com/-nLVODmQ0yRs/XdgkyspNu2I/AAAAAAAAAbc/fcSPANSzzAgHg6CAjgdKq_XmQQGftalSQCLcBGAsYHQ/s400/220px-Simpsons_t2.png');
+}
+.zindex{
+  z-index: 1;
+}
+.tamanho{
+  height: 220px;
+}
+.font{
+  font-size: 1rem;
 }

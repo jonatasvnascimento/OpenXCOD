@@ -18,7 +18,9 @@ import Endereco from '../api/Endereco/Endereco'
 
 //Entretenimento
 import Entretenimento from '../Entretenimento/Tamplate/Entretenimento'
-import Seriados from '../Entretenimento/Tamplate/Seriados'
+import Simpson from '../Entretenimento/SimponAllTemp/Simpson'
+import simpson1temp from '../Entretenimento/SimponAllTemp/Temp/simpson1temp'
+import simpson2temp from '../Entretenimento/SimponAllTemp/Temp/simpson2temp'
 
 // Area de estudo do curso
 import Study from '../tamplates/Study'
@@ -46,7 +48,9 @@ export default function app() {
 
             {/* Rotas Entretenimento */}
             <Route path="/entretenimento" component={Entretenimento}/>
-            <Route path="/seriados" component={Seriados}/>
+            <Route path="/simpsons-all-temp" component={Simpson}/>
+            <Route path="/simpsons-1-temp" component={simpson1temp}/>
+            <Route path="/simpsons-2-temp" component={simpson2temp}/>
 
             {/* Area de studo do curso */}
             <Route path="/study" component={Study} /> 
