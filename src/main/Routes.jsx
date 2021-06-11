@@ -64,14 +64,14 @@ export default function app() {
         <Switch>
             {/* Rotas Header */}
             <Route exact path="/" component={Home} />
-            <Route path="/tools" component={Tools} />
+            <Route exact path="/tools" component={Tools} />
             <Route path="/criacao-de-sites" component={GhostBit} />
 
             {/* Rotas Tools */}
-            <Route path="/convert-box" component={ConvertBox} />
-            <Route path="/convert-base" component={ConvertBase} />
-            <Route path="/convert-unit" component={ConvertUnit} />
-            <Route path="/calculator" component={Calculator} /> 
+            <Route path="/tools/convert-box" component={ConvertBox} />
+            <Route path="/tools/convert-base" component={ConvertBase} />
+            <Route path="/tools/convert-unit" component={ConvertUnit} />
+            <Route path="/tools/calculator" component={Calculator} /> 
 
             {/* Rotas API */}
             <Route path="/noticias" component={Noticias}/>
