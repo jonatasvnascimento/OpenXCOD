@@ -11,7 +11,7 @@ export const NewsContextProvider = (props) => {
     // https://newsapi.org/v2/everything?q=tesla&from=2021-05-08&sortBy=publishedAt&apiKey=face7930b095459aa19fa97cfd26b6ca
 
     useEffect(() => {
-        axios.get(`http://newsapi.org/v2/everything?q=${research}&from=2021-06-09&to=2021-06-09&sortBy=popularity&apiKey=${apiKey}`)
+        axios.get(`https://newsapi.org/v2/everything?q=${research}&from=2021-06-09&to=2021-06-09&sortBy=popularity&apiKey=${apiKey}`)
             .then(response => {
                 setData(response.data)
             }).catch(error => {
