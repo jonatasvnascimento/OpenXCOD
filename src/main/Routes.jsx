@@ -15,6 +15,7 @@ import Calculator from '../components/Calculator/src/main/Calculator'
 //API
 import Noticias from '../api/Noticias/Noticias'
 import Endereco from '../api/Endereco/Endereco'
+import News from '../api/News/NewsContext'
 
 //Entretenimento
 import Entretenimento from '../Entretenimento/Tamplate/Entretenimento'
@@ -76,6 +77,8 @@ export default function app() {
             {/* Rotas API */}
             <Route path="/noticias" component={Noticias}/>
             <Route path="/endereco" component={Endereco}/>
+            <Route path="/News" component={News}/>
+
 
             {/* Rotas Entretenimento */}
             <Route path="/entretenimento" component={Entretenimento}/>

@@ -48,8 +48,9 @@ const Example = (props) => {
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>API</DropdownToggle>
                                 <DropdownMenu right>
-                                    <DropdownItem><Link to="/filmes" className="text-decoration-none">API teste</Link></DropdownItem>
+                                    <DropdownItem><Link to="/news" className="text-decoration-none">News Teste</Link></DropdownItem>
                                 </DropdownMenu>
+                                
                             </UncontrolledDropdown>
                         </Nav>
                     </Collapse>
