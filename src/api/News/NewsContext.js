@@ -20,12 +20,32 @@ export default function NewsContext() {
 
     return (
         <div className="container mt-3">
-            {data.map((value, index) => (
-                <li key={index}>
-                    <h2>{value.name}</h2>
-                </li>
-            ))}
-            
-        </div>
+            <table className="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Website</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    {data.map((data, index) => (
+                        <tr key={index}>
+                            <th scope="row">{data.id}</th>
+                            <td>{data.name}</td>
+                            <td>{data.username}</td>
+                            <td>{data.email}</td>
+                            <td>{data.website}</td>
+                        </tr>
+                    ))}
+                </tbody>
+
+            </table>
+
+
+        </div >
     )
 }
