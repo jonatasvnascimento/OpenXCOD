@@ -1,16 +1,15 @@
 const express = require('express');
 const cors = require('cors');
+const axios = require('axios')
 const app = express()
 
 app.use(cors())
 
-app.get('/', (req, res) => {
-    return res.json([
-        {name: "Jeff"},
-        {name: "Antony"},
-        {name: "Marry"},
-        {name: "Artur"},
-    ])
+app.get('/', async (req, res) => {
+
+    const { data } = await axios('https://jsonplaceholder.typicode.com/users')
+
+    return res.json(data)
 })
 
 const port = process.env.PORT || 3001
