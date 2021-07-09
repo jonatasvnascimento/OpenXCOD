@@ -8,7 +8,7 @@ export default function Footer(props) {
         <footer className="text-center text-lg-start  text-muted container ">
             <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                 <div className="me-5 d-none d-lg-block">
-                    <span>Se conecte a OpenKodo atraves das redes sociais:</span>
+                    <span>Se conecte a OpenXCOD atraves das redes sociais:</span>
                 </div>
                 <div>
                     <Link className="me-4 text-reset" to="">
