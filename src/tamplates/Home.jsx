@@ -9,7 +9,7 @@ export default function Home() {
                 <div className="text-center">
                     <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column ">
                         <main role="main" className="inner cover">
-                            <h1 className="cover-heading">Bem vindo ao OpenKodo.</h1>
+                            <h1 className="cover-heading">Bem vindo ao OpenXCOD.</h1>
                             <p className="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
                             <p className="lead">
                                 <Link to="/" className="btn btn-lg btn-secondary">Learn more</Link>
