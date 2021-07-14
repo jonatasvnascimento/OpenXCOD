@@ -22,7 +22,8 @@ export default class ConvertBox extends React.Component {
         this.setState({ value: value.toUpperCase() })
     }
     sentenceCase(event) {
-        let value = this.state.value
+        let value = this.state.value.toLowerCase()
+        
         String.prototype.capitalize = function(e) {
             return e.charAt(0).toUpperCase() + this.substr(1);
         }
