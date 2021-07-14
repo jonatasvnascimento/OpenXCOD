@@ -1,40 +1,59 @@
-import { Link } from 'react-router-dom'
-import { Row, Col } from 'reactstrap';
+import React from 'react'
+import './css/ConvertBox.css'
+export default class ConvertBox extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            value: ''
+        };
 
-const ConvertBox = (props) => {
-    return (
-        <div className="container mb-5 mt-3">
-            <Row>
-                <Col sm="12">
-                    <div className="container mt-3 ">
-                        <div className="row">
-                            <div className="col-sm-15 mb-3">
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Primeiro Letra Maiúscula</Link>
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Minúscula</Link>
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Maiúscula</Link>
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Caixa Capitalizada</Link>
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Caso Alternado</Link>
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Caixa de Titulo</Link>
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Caso Inverso</Link>
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Varselete</Link>
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Sobrecritp</Link>
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Texto taxado</Link>
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Texto Reverso</Link>
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Texto Invertido</Link>
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Negrito</Link>
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Copiar</Link>
-                                <Link to="/text-convert" className="btn btn-secondary mb-2 mr-2">Limpar</Link>
-                            </div>
-                        </div>
-                        <div className="form-group">
-                            <label>Digite um texto:</label>
-                            <textarea className="form-control" rows="10"></textarea>
-                        </div>
-                    </div>
-                </Col>
-            </Row>
-        </div>
-    );
+        this.handleChange = this.handleChange.bind(this);
+        this.uppercase = this.uppercase.bind(this)
+        this.sentenceCase = this.sentenceCase.bind(this)
+    }
+
+    handleChange(event) {
+        var teste = event.target.value
+        this.setState({ value: event.target.value });
+    }
+
+    uppercase(event) {
+        let value = this.state.value
+        this.setState({ value: value.toUpperCase() })
+    }
+    sentenceCase(event) {
+        let value = this.state.value
+        String.prototype.capitalize = function(e) {
+            return e.charAt(0).toUpperCase() + this.substr(1);
+        }
+        this.setState({ value: value.capitalize(value) })
+        
+    }
+
+    render() {
+        return (
+            <div className="container mt-3">
+                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Minúscula</button>
+                <button className="btn btn-secondary espaco" onClick={this.sentenceCase}>Primeiro Letra Maiúscula</button>
+                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Maiúscula</button>
+                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Caixa Capitalizada</button>
+                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Caso Alternado</button>
+                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Caixa de Titulo</button>
+                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Caso Inverso</button>
+                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Varselete</button>
+                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Sobrecritp</button>
+                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Texto taxado</button>
+                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Texto Reverso</button>
+                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Texto Invertido</button>
+                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Negrito</button>
+                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Copiar</button>
+                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Limpar</button>
+                <form claaa className="mt-3">
+                    <textarea className="form-control" rows="10" value={this.state.value} onChange={this.handleChange} />
+                    {/* <input type="submit" value="Submit" /> */}
+                </form>
+            </div>
+
+        );
+    }
 }
-
-export default ConvertBox;
