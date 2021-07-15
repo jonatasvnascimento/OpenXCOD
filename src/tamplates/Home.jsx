@@ -1,23 +1,29 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './css/Home.css'
+import './assets/img/favicon.png'
+import './assets/img/apple-touch-icon.png'
+import './assets/vendor/aos/aos.css'
+import './assets/vendor/bootstrap/css/bootstrap.min.css'
+import './assets/vendor/bootstrap-icons/bootstrap-icons.css'
+import './assets/vendor/boxicons/css/boxicons.min.css'
+import './assets/vendor/glightbox/css/glightbox.min.css'
+import './assets/vendor/swiper/swiper-bundle.min.css'
+import './assets/css/style.css'
 
 export default function Home() {
     return (
         <div className="jumbotron config_back">
-            <div className="container">
-                <div className="text-center">
-                    <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column ">
-                        <main role="main" className="inner cover">
-                            <h1 className="cover-heading">Bem vindo ao OpenXCOD.</h1>
-                            <p className="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-                            <p className="lead">
-                                <Link to="/" className="btn btn-lg btn-secondary">Learn more</Link>
-                            </p>
-                        </main>
+            <section id="hero" className="d-flex align-items-center">
+                <div className="container" >
+                    <h1>Welcome to <span>OpenXCOD</span></h1>
+                    <h2>We are team of talented designers making websites with Bootstrap</h2>
+                    <div className="d-flex">
+                        <Link to="/" href="#about" className="btn-get-started scrollto">Get Started</Link>
                     </div>
                 </div>
-            </div>
+            </section>
+           
         </div>
     )
 }
