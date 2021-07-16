@@ -14,6 +14,7 @@ export default class ConvertBox extends React.Component {
         this.clean = this.clean.bind(this)
         this.copy = this.copy.bind(this)
         this.capitalizeFistWord = this.capitalizeFistWord.bind(this)
+        this.alternatingCase = this.alternatingCase.bind(this)
     }
 
     handleChange(event) {
@@ -39,11 +40,11 @@ export default class ConvertBox extends React.Component {
         let event = this.state.value
         event = ""
         this.setState({ value: event })
-        this.setState({copy: false})
+        this.setState({ copy: false })
 
     }
     copy() {
-        this.setState({copy: true})
+        this.setState({ copy: true })
         navigator.clipboard.writeText(this.state.value)
     }
     capitalizeFistWord() {
@@ -54,6 +55,11 @@ export default class ConvertBox extends React.Component {
         this.setState({ value: str })
 
     }
+    alternatingCase() {
+        let event = this.state.value
+        let finalEvent = event.split('').reverse().join('')
+        this.setState({value: finalEvent})
+    }
 
     render() {
         return (
@@ -61,7 +67,7 @@ export default class ConvertBox extends React.Component {
                 <button className="btn btn-secondary espaco" onClick={this.uppercase}>Minúscula</button>
                 <button className="btn btn-secondary espaco" onClick={this.sentenceCase}>Primeiro Letra Maiúscula</button>
                 <button className="btn btn-secondary espaco" onClick={this.capitalizeFistWord}>Caixa Capitalizada</button>
-                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Caso Alternado</button>
+                <button className="btn btn-secondary espaco" onClick={this.alternatingCase}>Caso Alternado</button>
                 <button className="btn btn-secondary espaco" onClick={this.uppercase}>Caixa de Titulo</button>
                 <button className="btn btn-secondary espaco" onClick={this.uppercase}>Caso Inverso</button>
                 <button className="btn btn-secondary espaco" onClick={this.uppercase}>Varselete</button>
