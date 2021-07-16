@@ -12,7 +12,7 @@ const Example = (props) => {
                     <nav id="navbar" className="navbar">
                         <ul>
                             <li><Link to="/" className="nav-link scrollto">Home</Link></li>
-                            
+
                             <li><Link to="/noticias" className="nav-link scrollto" href="#about">Noticias</Link></li>
                             <li><Link to="/tools" className="nav-link scrollto" href="#services">Ferramentas</Link></li>
                             <li><Link to="/" className="nav-link scrollto " href="#portfolio">Portfolio</Link></li>
@@ -37,6 +37,16 @@ const Example = (props) => {
                             {/* <li><Link to="/" className="nav-link scrollto" href="#contact">Contact</Link></li> */}
                         </ul>
                         <i className="bi bi-list mobile-nav-toggle"></i>
+                        <div className="dropdown">
+                            <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><Link to="/" className="dropdown-item" href="#">Action</Link></li>
+                                <li><Link to="/" className="dropdown-item" href="#">Another action</Link></li>
+                                <li><Link to="/" className="dropdown-item" href="#">Something else here</Link></li>
+                            </ul>
+                        </div>
                     </nav>
 
                 </div>
@@ -60,7 +70,7 @@ const Example = (props) => {
                             <NavItem>
                                 <Link to="/entretenimento" className="nav-link">Entretenimento</Link>
                             </NavItem> */}
-                            {/* <UncontrolledDropdown nav inNavbar>
+            {/* <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>Entretenimento</DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem><Link to="/filmes" className="text-decoration-none">Filmes</Link></DropdownItem>
@@ -68,7 +78,7 @@ const Example = (props) => {
                                     <DropdownItem><Link to="/Series" className="text-decoration-none">Series</Link></DropdownItem>
                                 </DropdownMenu>
                             </UncontrolledDropdown> */}
-                            {/* <UncontrolledDropdown nav inNavbar>
+            {/* <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>API</DropdownToggle>
                                 <DropdownMenu right>
                                     <DropdownItem><Link to="/news" className="text-decoration-none">News Teste</Link></DropdownItem>
