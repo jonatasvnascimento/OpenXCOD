@@ -75,7 +75,7 @@ export default class ConvertBox extends React.Component {
     supScript() {
         let value = this.state.value
     }
-
+ 
     render() {
         return (
             <div className="container mt-3">
