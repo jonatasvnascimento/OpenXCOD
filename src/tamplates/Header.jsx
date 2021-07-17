@@ -64,16 +64,16 @@ const Example = (props) => {
                         <Link to="/" className="nav-link scrollto">Home</Link>
                     </nav>
                     <nav id="navbar" className="navbar">
-                        <Link to="/" className="nav-link scrollto">Noticias</Link>
+                        <Link to="/noticias" className="nav-link scrollto">Noticias</Link>
                     </nav>
                     <nav id="navbar" className="navbar">
-                        <Link to="/" className="nav-link scrollto">Ferramentas</Link>
-                    </nav>
-                    <nav id="navbar" className="navbar">
-                        <Link to="/" className="nav-link scrollto">Portfolio</Link>
+                        <Link to="/tools" className="nav-link scrollto">Ferramentas</Link>
                     </nav>
                     <nav id="navbar" className="navbar">
                         <Link to="/" className="nav-link scrollto">Portfolio</Link>
+                    </nav>
+                    <nav id="navbar" className="navbar">
+                        <Link to="/" className="nav-link scrollto">Entretenimento</Link>
                     </nav>
                    
                     {/* <UncontrolledDropdown nav inNavbar>
