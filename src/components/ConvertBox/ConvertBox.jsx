@@ -1,13 +1,15 @@
 import React from 'react'
 import './css/ConvertBox.css'
 import CKEditor from 'ckeditor4-react-advanced';
+// import { CKEditor } from 'ckeditor4-react';
 export default class ConvertBox extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             value: '',
-            copy: false
+            copy: false,
         };
+
 
         this.handleChange = this.handleChange.bind(this);
         this.uppercase = this.uppercase.bind(this)
@@ -22,6 +24,7 @@ export default class ConvertBox extends React.Component {
 
     handleChange(event) {
         this.setState({ value: event.target.value });
+
     }
 
     uppercase(event) {
@@ -74,9 +77,15 @@ export default class ConvertBox extends React.Component {
     }
 
     supScript() {
+
     }
 
+
     render() {
+
+
+
+
         return (
             <div className="container mt-3">
                 <button className="btn btn-secondary espaco" onClick={this.uppercase}>Minúscula</button>
@@ -89,40 +98,35 @@ export default class ConvertBox extends React.Component {
                 <button className="btn btn-secondary espaco" onClick={this.uppercase}>Texto taxado</button>
                 <button className="btn btn-secondary espaco" onClick={this.uppercase}>Texto Reverso</button>
                 <button className="btn btn-secondary espaco" onClick={this.uppercase}>Texto Invertido</button>
-                <button className="btn btn-secondary espaco" onClick={this.uppercase}>Negrito</button>
-
 
 
                 <form className="mt-3">
                     <textarea className="form-control" rows="10" value={this.state.value} onChange={this.handleChange} />
                     {/* <input type="submit" value="Submit" /> */}
                 </form>
-
-                <CKEditor
-
+                <CKEditor className="form-control"
                     data={this.state.value}
                     onChange={this.onEditorChange}
                     config={{
                         toolbar: [
-                            ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'],
-                            ['Bold', 'Italic', 'Underline', 'Link', 'Unlink', 'Image'],
-                            ['NumberedList', 'BulletedList', 'list', 'indent', 'blocks', 'Paragraph'],
-                            ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript'],
-                            ['TextColor', 'BGColor'],
-                            ['Maximize', 'ShowBlocks'],
                             ['Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates'],
                             ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'],
                             ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'],
-                            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl', 'Language'],
+                            ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'],
+                            ['Bold', 'Italic', 'Underline', 'Link', 'Unlink', 'Image', 'Strike', 'Subscript', 'Superscript','-', 'CopyFormatting', 'RemoveFormat'],
+                            ['-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl', 'Language'],
+                            ['NumberedList', 'BulletedList', 'list', 'indent', 'blocks', 'Paragraph'],
                             ['Link', 'Unlink', 'Anchor'],
-                            ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe']
+                            ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe',],
+                            ['Styles', 'Format', 'Font', 'FontSize'],
+                            ['TextColor', 'BGColor'],
+                            ['Maximize', 'ShowBlocks'],
+                            ['About']
                         ],
 
-                        width: '1300px',
+                        width: '1300x',
                         height: '350px',
-
                     }
-
                     }
                 />
                 <button className="btn btn-dark espaco" onClick={this.copy}>Copiar</button>
