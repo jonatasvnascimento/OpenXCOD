@@ -1,5 +1,6 @@
 import React from 'react'
 import './css/ConvertBox.css'
+import CKEditor from 'ckeditor4-react-advanced';
 export default class ConvertBox extends React.Component {
     constructor(props) {
         super(props);
@@ -59,7 +60,7 @@ export default class ConvertBox extends React.Component {
     alternatingCase() {
         let event = this.state.value
         let finalEvent = event.split('').reverse().join('')
-        this.setState({value: finalEvent})
+        this.setState({ value: finalEvent })
     }
 
     invertCase() {
@@ -73,9 +74,8 @@ export default class ConvertBox extends React.Component {
     }
 
     supScript() {
-        let value = this.state.value
     }
- 
+
     render() {
         return (
             <div className="container mt-3">
@@ -91,11 +91,40 @@ export default class ConvertBox extends React.Component {
                 <button className="btn btn-secondary espaco" onClick={this.uppercase}>Texto Invertido</button>
                 <button className="btn btn-secondary espaco" onClick={this.uppercase}>Negrito</button>
 
+
+
                 <form className="mt-3">
                     <textarea className="form-control" rows="10" value={this.state.value} onChange={this.handleChange} />
                     {/* <input type="submit" value="Submit" /> */}
-
                 </form>
+
+                <CKEditor
+
+                    data={this.state.value}
+                    onChange={this.onEditorChange}
+                    config={{
+                        toolbar: [
+                            ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'],
+                            ['Bold', 'Italic', 'Underline', 'Link', 'Unlink', 'Image'],
+                            ['NumberedList', 'BulletedList', 'list', 'indent', 'blocks', 'Paragraph'],
+                            ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript'],
+                            ['TextColor', 'BGColor'],
+                            ['Maximize', 'ShowBlocks'],
+                            ['Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates'],
+                            ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'],
+                            ['Find', 'Replace', '-', 'SelectAll', '-', 'Scayt'],
+                            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl', 'Language'],
+                            ['Link', 'Unlink', 'Anchor'],
+                            ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe']
+                        ],
+
+                        width: '1300px',
+                        height: '350px',
+
+                    }
+
+                    }
+                />
                 <button className="btn btn-dark espaco" onClick={this.copy}>Copiar</button>
                 <button className="btn btn-danger espaco" onClick={this.clean}>Limpar</button>
                 {this.state.copy ? <span style={{ color: 'red' }}>Copied</span> : null}
