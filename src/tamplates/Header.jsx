@@ -6,7 +6,7 @@ import {
     Navbar,
     NavbarToggler,
     // Nav,
-    // NavItem,
+    NavItem,
     // UncontrolledDropdown,
     // DropdownToggle,
     // DropdownMenu,
@@ -26,7 +26,6 @@ const Example = (props) => {
                 <nav id="navbar" className="navbar">
                     <ul>
                         <li><Link to="/" className="nav-link scrollto">Home</Link></li>
-
                         <li><Link to="/noticias" className="nav-link scrollto" href="#about">Noticias</Link></li>
                         <li><Link to="/tools" className="nav-link scrollto" href="#services">Ferramentas</Link></li>
                         <li><Link to="/" className="nav-link scrollto " href="#portfolio">Portfolio</Link></li>
@@ -64,8 +63,19 @@ const Example = (props) => {
                     <nav id="navbar" className="navbar">
                         <Link to="/" className="nav-link scrollto">Home</Link>
                     </nav>
-
-
+                    <nav id="navbar" className="navbar">
+                        <Link to="/" className="nav-link scrollto">Noticias</Link>
+                    </nav>
+                    <nav id="navbar" className="navbar">
+                        <Link to="/" className="nav-link scrollto">Ferramentas</Link>
+                    </nav>
+                    <nav id="navbar" className="navbar">
+                        <Link to="/" className="nav-link scrollto">Portfolio</Link>
+                    </nav>
+                    <nav id="navbar" className="navbar">
+                        <Link to="/" className="nav-link scrollto">Portfolio</Link>
+                    </nav>
+                   
                     {/* <UncontrolledDropdown nav inNavbar>
                         <DropdownToggle nav caret>Entretenimento</DropdownToggle>
                         <DropdownMenu right>
