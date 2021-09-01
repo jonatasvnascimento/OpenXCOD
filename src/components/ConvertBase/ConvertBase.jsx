@@ -1,7 +1,36 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import { Row, Col } from 'reactstrap';
 
 const ConvertBase = (props) => {
+
+    const [selectValue, setSelectValue] = useState(1);
+    const list = [
+        { id: 1, name: 'Binary to Hexa' },
+        { id: 2, name: 'Binary to Octa' },
+        { id: 3, name: 'Binary to Decimal' },
+        { id: 4, name: 'Decimal to Hexa' },
+        { id: 5, name: 'Decimal to Binary' },
+        { id: 6, name: 'Decimal to Decimal' },
+        { id: 7, name: 'Binary to Hexa' },
+        { id: 8, name: 'Binary to Octa' },
+        { id: 9, name: 'Decimal to Hexa' },
+        { id: 10, name: 'Binary to Hexa' },
+        { id: 11, name: 'Binary to Octa' },
+        { id: 12, name: 'Decimal to Hexa' },
+        { id: 13, name: 'Binary to Hexa' },
+        { id: 14, name: 'Binary to Octa' },
+    ]
+    // <option></option>
+    // <option>Hexa to Decimal</option>
+    // <option>Hexa to Octa</option>
+    // <option>Hexa to Binary</option>
+    // <option>Octa to Decimal</option>
+    // <option>Octa to Hexa</option>
+    // <option>Octa to Binary</option>
+    // <option>Texto to Binary</option>
+    // <option>Texto to Hexa   </option>
+
     return (
         <div className="container mb-5 mt-3">
             <Row>
@@ -9,21 +38,13 @@ const ConvertBase = (props) => {
                     <div className="container">
                         <div className="form-group mt-3">
                             <label >Conversor de Base</label>
-                            <select className="form-control">
-                                <option>Binary to Decinal</option>
-                                <option>Binary to Hexa</option>
-                                <option>Binary to Octa</option>
-                                <option>Decimal to Hexa</option>
-                                <option>Decimal to Octa</option>
-                                <option>Decimal to Binary</option>
-                                <option>Hexa to Decimal</option>
-                                <option>Hexa to Octa</option>
-                                <option>Hexa to Binary</option>
-                                <option>Octa to Decimal</option>
-                                <option>Octa to Hexa</option>
-                                <option>Octa to Binary</option>
-                                <option>Texto to Binary</option>
-                                <option>Texto to Hexa   </option>
+                            <select className="form-control" value={selectValue} onChange={e => setSelectValue(e.target.value)}>
+
+                                {list.map((item) => (
+                                    <option key={item.id}>{item.name}</option>
+                                ))}
+
+
                             </select>
                         </div>
 

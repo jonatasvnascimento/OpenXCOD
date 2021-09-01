@@ -54,12 +54,7 @@
   color: #106eea;
 }
 .spanLogo:hover {
-  background: linear-gradient(
-    to right,
-    rgb(0, 0, 0),
-    rgb(0, 0, 0),
-    rgb(0, 0, 0)
-  );
+  
   border-radius: 5px;
   color: #00ffff;
   transition: all 0.3s ease-out;
@@ -69,13 +64,8 @@
   color: #000000;
 }
 .spanName:hover {
-  background: linear-gradient(
-    to right,
-    rgb(0, 0, 0),
-    rgb(0, 0, 0),
-    rgb(0, 0, 0)
-  );
+ 
   border-radius: 5px;
-  color: #fffb00;
+  color: #3f3f3f;
   transition: all 0.3s ease-out;
 }
