@@ -22,6 +22,18 @@ const ConvertBase = (props) => {
         { id: 14, name: 'Texto to Hexa' },
     ]
 
+    function teste(){
+        console.log('teste 1')
+    }
+
+    switch (selectValue) {
+        case 1:
+            teste()
+            break;
+        default:
+            break;
+    }
+
     return (
         <div className="container mb-5 mt-3">
             <Row>
