@@ -22,17 +22,99 @@ const ConvertBase = (props) => {
         { id: 14, name: 'Texto to Hexa' },
     ]
 
-    function teste(){
-        console.log('teste 1')
+    function binary_to_hexa(value) {
+        console.log(value)
+    }
+    function binary_to_octa(value) {
+        console.log(value)
+    }
+    function binary_to_decimal(value) {
+        console.log(value)
+    }
+    function decimal_to_hexa(value) {
+        console.log(value)
+    }
+    function binary_to_octa(value) {
+        console.log(value)
+    }
+    function binary_to_octa(value) {
+        console.log(value)
+    }
+    function binary_to_hexa(value) {
+        console.log(value)
+    }
+    function binary_to_octa(value) {
+        console.log(value)
+    }
+    function binary_to_octa(value) {
+        console.log(value)
+    }
+    function binary_to_hexa(value) {
+        console.log(value)
+    }
+    function binary_to_octa(value) {
+        console.log(value)
+    }
+    function binary_to_octa(value) {
+        console.log(value)
+    }
+    function binary_to_octa(value) {
+        console.log(value)
+    }
+    function binary_to_octa(value) {
+        console.log(value)
     }
 
-    switch (selectValue) {
-        case 1:
-            teste()
-            break;
-        default:
-            break;
+    function escolha(selectEscolha) {
+        switch (selectEscolha) {
+            case 'Binary to Hexa':
+                binary_to_hexa(selectEscolha)
+                break;
+            case 'Binary to Hexa':
+                binary_to_hexa(selectEscolha)
+                break;
+            case 'Binary to Hexa':
+                binary_to_hexa(selectEscolha)
+                break;
+            case 'Binary to Hexa':
+                binary_to_hexa(selectEscolha)
+                break;
+            case 'Binary to Hexa':
+                binary_to_hexa(selectEscolha)
+                break;
+            case 'Binary to Hexa':
+                binary_to_hexa(selectEscolha)
+                break;
+            case 'Binary to Hexa':
+                binary_to_hexa(selectEscolha)
+                break;
+            case 'Binary to Hexa':
+                binary_to_hexa(selectEscolha)
+                break;
+            case 'Binary to Hexa':
+                binary_to_hexa(selectEscolha)
+                break;
+            case 'Binary to Hexa':
+                binary_to_hexa(selectEscolha)
+                break;
+            case 'Binary to Hexa':
+                binary_to_hexa(selectEscolha)
+                break;
+            case 'Binary to Hexa':
+                binary_to_hexa(selectEscolha)
+                break;
+            case 'Binary to Hexa':
+                binary_to_hexa(selectEscolha)
+                break;
+            case 'Binary to Hexa':
+                binary_to_hexa(selectEscolha)
+                break;
+            default:
+                break;
+        }
     }
+
+
 
     return (
         <div className="container mb-5 mt-3">
@@ -47,7 +129,6 @@ const ConvertBase = (props) => {
                                 ))}
                             </select>
                         </div>
-
                         <ul className="list-group">
                             <button type="button" className="btn btn-secondary mb-2">Morse</button>
                             <button type="button" className="btn btn-secondary mb-2">ASCII</button>
@@ -63,7 +144,7 @@ const ConvertBase = (props) => {
                                         <div className="form-group">
                                             <textarea className="form-control" rows="12" cols="20"></textarea>
                                         </div>
-                                        <Link to="#" className="btn btn-primary">Codificar</Link>
+                                        <Link to="#" className="btn btn-primary" onClick={escolha(selectValue)}>Codificar</Link>
                                     </div>
                                 </div>
                             </div>
