@@ -33,7 +33,7 @@ export class Navbar extends Component {
             );
           })}
         </ul>
-        <Button className="">Entrar</Button>
+        {/* <Button>Entrar</Button> */}
       </div>
     );
   }

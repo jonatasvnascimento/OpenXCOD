@@ -15,8 +15,8 @@ export const MenuItems = [
     cName: 'nav-links',
   },
   {
-    title: 'Doações',
-    url: '/',
+    title: 'Imposto de Renda',
+    url: '/News',
     cName: 'nav-links',
   },
   {
