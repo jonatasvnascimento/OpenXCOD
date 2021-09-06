@@ -14,8 +14,9 @@ export class Navbar extends Component {
     return (
       <div className="NavbarItems">
         <h1 className="navbar-logo">
-          <span className="spanName">Open</span>
-          <span className="spanLogo">XCOD</span>
+          <span className="">Open</span>
+          <span className="spanLogo">X</span>
+          COD
         </h1>
         <div className="menu-icon" onClick={this.handleClick}>
           <i
