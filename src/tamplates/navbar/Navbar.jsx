@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from './Button';
 import { MenuItems } from './MenuItems';
 import './NavbarStyle.css';
@@ -14,9 +15,9 @@ export class Navbar extends Component {
     return (
       <div className="NavbarItems">
         <h1 className="navbar-logo">
-          <span className="">Open</span>
-          <span className="spanLogo">X</span>
-          COD
+          <Link className="spanLogo"to="/"><span className="">Open</span></Link>
+          <Link className="spanLogo"to="/"><span className="">X</span></Link>
+          <Link className="spanLogo"to="/"><span className="">COD</span></Link>
         </h1>
         <div className="menu-icon" onClick={this.handleClick}>
           <i

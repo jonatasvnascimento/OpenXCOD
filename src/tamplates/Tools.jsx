@@ -10,8 +10,8 @@ export default function Tools() {
             </div>
             <div className="row">
                 <LinkTools linkgo="/tools/calculator" title="Calculadora Basica" description="Calculadora simples para calculos do dia" icon={<i className="fas fa-calculator"></i>} />
-                <LinkTools linkgo="/tools/convert-box" title="Conversor de Texto" description="Converta seus texto mais rapido com essa ferramenta" icon={<i className="fab fa-creative-commons-sa"></i>} />
                 <LinkTools linkgo="/tools/convert-base" title="Conversor de Base" description="Converta dados binarios Hexa e Octa para decimal" icon={<i className="fab fa-creative-commons-sa"></i>}/>
+                <LinkTools linkgo="/tools/convert-box" title="Conversor de Texto" description="Converta seus texto mais rapido com essa ferramenta" icon={<i className="fab fa-creative-commons-sa"></i>} />
                 <LinkTools linkgo="/tools/convert-unit" title="Conversor de Medida" description="Conversor de medida KM, metros, etc" icon={<i className="fab fa-creative-commons-sa"></i>}/>
             </div>
 
