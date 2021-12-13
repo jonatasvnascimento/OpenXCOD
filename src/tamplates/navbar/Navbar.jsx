@@ -15,9 +15,15 @@ export class Navbar extends Component {
     return (
       <div className="NavbarItems">
         <h1 className="navbar-logo">
-          <Link className="spanLogo"to="/"><span className="">Open</span></Link>
-          <Link className="spanLogo"to="/"><span className="">X</span></Link>
-          <Link className="spanLogo"to="/"><span className="">COD</span></Link>
+          <Link className="spanLogo" to="/">
+            <span className="">Open</span>
+          </Link>
+          <Link className="spanLogo" to="/">
+            <span className="">X</span>
+          </Link>
+          <Link className="spanLogo" to="/">
+            <span className="">COD</span>
+          </Link>
         </h1>
         <div className="menu-icon" onClick={this.handleClick}>
           <i
@@ -28,9 +34,9 @@ export class Navbar extends Component {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <a className={item.cName} href={item.url}>
+                <Link to={item.url} className={item.cName}>
                   {item.title}
-                </a>
+                </Link>
               </li>
             );
           })}
